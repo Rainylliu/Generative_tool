@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; 
 }
 body {
     margin: 0;
@@ -34,6 +35,9 @@ body {
     margin: 20px;
 }
 .photo-frame_left {
+    position: relative;
+}
+.photo-frame_right {
     position: relative;
 }
 .photo-frame_left, .photo-frame_right {
@@ -83,7 +87,7 @@ body {
     transition: .2s; 
     width: 300px;
     height: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -153,11 +157,9 @@ body {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    top: 65%;
-    left: 70%;
-    margin-top: 5px;
+    margin-top: 380px;
 }
 .sticker-img {
     cursor: move; 
@@ -259,7 +261,16 @@ body {
 #size-slider::-webkit-slider-thumb:hover {
     transform: scale(1.2);
 }
-
+#locker {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 350px;
+}
 @media (max-width: 767px) {
     .photo-frame_middle {
         margin: 10px;

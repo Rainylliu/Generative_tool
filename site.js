@@ -89,4 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
             img.style.transform = `${flipValue} scale(${scaleFactor})`;
         });
     });
+
+    document.getElementById('sticker-btn').addEventListener('click', function() {
+        document.querySelectorAll('.sticker-img').forEach(function(img) {
+            img.style.display = 'block';
+        });
+    
+        document.getElementById('locker').style.display = 'block';
+    
+        document.getElementById('controls').style.display = 'block';
+        document.getElementById('instruction').style.display = 'block';
+    });
+    
 });
