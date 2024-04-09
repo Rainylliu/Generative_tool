@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Art Museum</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box1" id="box1">
+            <div class="photo-frame_left">
+                <img src="./img/frame_left.png" alt="Photo">
+                <img src="./img/image-1.jpg" alt="pop" class="small-image">
+
+                <p id="instruction" style="display: none;">Drag stickers onto the portrait painting</p>
+                <div class="controls" id="controls" style=" display: none;">
+                    <label for="size-slider" style="color: gray; ">Adjust Sticker Size:</label>
+                    <input type="range" id="size-slider" min="0.5" max="1.5" value="1" step="0.01">
+                    <button id="flip-button" >Flip Stickers</button>
+                </div>   
+            </div>
+            <div class="photo-frame_middle">
+                <img src="./img/frame_middle.png" alt="Photo">
+                <div class="portrait">
+                    <img src="./img/portrait/03.jpg" alt="portrait1" class="portrait-img" style="display:block;">
+                    <img src="./img/portrait/Self_portrait_1.jpg" alt="portrait2" class="portrait-img" style="display:none;">
+                    <img src="./img/portrait/02.jpg" alt="portrait3" class="portrait-img" style="display:none;">
+                    <img src="./img/portrait/01.jpg" alt="portrait4" class="portrait-img" style="display:none;">
+                    <img src="./img/portrait/04.jpg" alt="portrait5" class="portrait-img" style="display:none;">
+                    <img src="./img/portrait/05.jpg" alt="portrait6" class="portrait-img" style="display:none;">
+                </div>
+                <div class="buttons">
+                    <button id="change">Change</button>
+                    <button id="sticker-btn">Add the sticker</button>
+                    <button id="clear-stickers">Clear</button>
+                </div>
+                <input type="range" id="hueSlider" min="0" max="360" value="0">
+            </div>
+            <div class="photo-frame_right">
+                <img src="./img/framw_right.png" alt="Photo">
+                <img src="./img/image-3.jpg" alt="pop" class="small-image">
+                <!-- <img src="./img/sticker/Mickey.PNG" alt="" class="sticker-img" style="display:none; position: absolute; width: 30%; left: 0; top: -70%; z-index: 1000;"> -->
+            </div>
+        </div>
+        <div class="sticker" id="sticker">
+            <img src="./img/sticker/cigarette.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 15%;">
+            <img src="./img/sticker/mustache.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 15%;">
+            <img src="./img/sticker/05.png" alt="" class="sticker-img"  draggable="true" style="display:none; width: 20%;"> 
+            <img src="./img/sticker/crown.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 25%;">
+            <img src="./img/sticker/necklace.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 18%;">
+            <img src="./img/sticker/04.png" alt="" class="sticker-img"  draggable="true" style="display:none; width: 15%;">
+            <img src="./img/sticker/sunglasses.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 25%;">
+            <img src="./img/sticker/Mickey.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 30%;">
+            <img src="./img/sticker/mask.PNG" alt="" class="sticker-img"  draggable="true" style="display:none; width: 25%;">
+        </div>     
+    </div>
+</body>
+</html>
+<script src="./site.js"></script>
