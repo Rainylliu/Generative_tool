@@ -80,11 +80,22 @@ document.addEventListener('DOMContentLoaded', () => {
             img.style.transform = 'none';
             img.classList.remove('in-box1');
         });
+        document.querySelectorAll('.controls').forEach(function(img) {
+            img.style.display = 'none';
+            img.style.transform = 'none';
+            img.classList.remove('in-box1');
+        });
+        document.getElementById('instruction').style.display = 'none'; 
+        document.querySelectorAll('.locker').forEach(function(img) {
+            img.style.display = 'none';
+            img.style.transform = 'none';
+            img.classList.remove('in-box1');
+        });
     });
     document.getElementById('size-slider').addEventListener('input', function() {
         const scaleFactor = this.value;
         document.querySelectorAll('.sticker-img.in-box1').forEach(img => {
-            img.dataset.scale = scaleFactor; // 更新 data-scale 属性
+            img.dataset.scale = scaleFactor; 
             const flipValue = img.style.transform.includes('scaleX(-1)') ? 'scaleX(-1)' : 'scaleX(1)';
             img.style.transform = `${flipValue} scale(${scaleFactor})`;
         });
